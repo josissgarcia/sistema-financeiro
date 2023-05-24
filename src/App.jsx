@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Home from "./pages/Home"
 import Faculdade from "./pages/Faculdade"
 import DpoLgpd from "./pages/DpoLgpd"
-import Noticias from "./pages/Noticias"
+import Lancamentos from "./pages/Lancamentos"
 import Navbar from "./components/Navbar"
 import VisualizaNoticia from "./pages/VisualizaNoticia"
 
@@ -19,7 +19,7 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/a-faculdade' element={<Faculdade />} />
           <Route path='/dpo-lgpd' element={<DpoLgpd />} />
-          <Route path='/noticias' element={<Noticias />} />
+          <Route path='/lancamentos' element={<Lancamentos />} />
           <Route path="/visualiza-noticia/:id" element={<VisualizaNoticia />} />
         </Routes>
       </BrowserRouter>

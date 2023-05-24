@@ -1,22 +1,52 @@
 {
-    "noticias":[
+    "lancamentos":[
         {
-            "id":1,
-            "titulo": "Medicina Veterinária recebe Nota Máxima do MEC",
-            "subtitulo":"Ministério da Educação atribuiu a nota 5 à graduação, em avaliação de reconhecimento, que leva em consideração equipe, alunos e estrutura",
-            "texto":"O Ministério da Educação (MEC) atribuiu a nota máxima à graduação de Medicina Veterinária do UNIESP na sua avaliação de reconhecimento de curso. A nota cinco é um atestado de qualidade e excelência nos trabalhos realizados pelo curso e pela instituição. A notícia foi festejada pelos professores e funcionários."
+            "id": 1,
+            "titulo": "Moradia",
+            "lancamentos2":[
+                {
+                    "subgrupo": "Energia_Energisa",
+                    "tipo": "Débito",
+                    "valor": 299,
+                    "observacao": "testeee",
+                    "data": "23-05-2023"
+                },
+                {
+                    "subgrupo": "Internet",
+                    "tipo": "Débito",
+                    "valor": 100,
+                    "observacao": "testeee",
+                    "data": "22-05-2023"
+                },
+                {
+                    "subgrupo": "Agua",
+                    "tipo": "Débito",
+                    "valor": 50,
+                    "observacao": "testeee",
+                    "data": "21-05-2023"
+                }
+            ]
         },
         {
-            "id":2,
-            "titulo": "Coordenação de Publicidade lança Concurso de Criação com premiação",
-            "subtitulo":"A atividade tem inscrições até o dia 25 de maio e oferece como prêmio a dispensa de uma mensalidade do curso",
-            "texto":"A Coordenação dos cursos de Publicidade do UNIESP divulgou o lançamento Concurso de Criação 2023. A atividade, que faz parte da Semana de Publicidade UNIESP, tem inscrições até o dia 25 de maio e oferece como prêmio a dispensa de uma mensalidade do curso (ou meia mensalidade para cada membro em caso de dupla)."
-        },
-        {
-            "id":3,
-            "titulo": "Coordenação divulga aprovados da IV Mostra de Enfermagem",
-            "subtitulo":"O documento também consta os horários de apresentação, que acontecerão no hall do terceiro andar do Bloco E",
-            "texto":"A mostra, que faz parte da Semana da Enfermagem UNIESP, acontece nesta quinta-feira, dia 18 de maio, e faz alusão à 84ª Semana Brasileira de Enfermagem, promovida pela Associação Brasileira de Enfermagem (ABEn). As inscrições de trabalhos podem ser feitas até o dia 12 de maio."
+            "id": 2,
+            "titulo": "Educação",
+            "lancamentos2":[
+                {
+                    "subgrupo": "Faculdade",
+                    "tipo": "Débito",
+                    "valor": 300,
+                    "observacao": "testeee",
+                    "data": "23-05-2023"
+                },
+                {
+                    "subgrupo": "Colégio",
+                    "tipo": "Débito",
+                    "valor": 750,
+                    "observacao": "testeee",
+                    "data": "22-05-2023"
+                }
+            ]
         }
     ]
+    
 }
