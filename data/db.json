@@ -1,52 +1,36 @@
 {
-    "lancamentos":[
-        {
-            "id": 1,
-            "titulo": "Moradia",
-            "lancamentos2":[
-                {
-                    "subgrupo": "Energia_Energisa",
-                    "tipo": "Débito",
-                    "valor": 299,
-                    "observacao": "testeee",
-                    "data": "23-05-2023"
-                },
-                {
-                    "subgrupo": "Internet",
-                    "tipo": "Débito",
-                    "valor": 100,
-                    "observacao": "testeee",
-                    "data": "22-05-2023"
-                },
-                {
-                    "subgrupo": "Agua",
-                    "tipo": "Débito",
-                    "valor": 50,
-                    "observacao": "testeee",
-                    "data": "21-05-2023"
-                }
-            ]
-        },
-        {
-            "id": 2,
-            "titulo": "Educação",
-            "lancamentos2":[
-                {
-                    "subgrupo": "Faculdade",
-                    "tipo": "Débito",
-                    "valor": 300,
-                    "observacao": "testeee",
-                    "data": "23-05-2023"
-                },
-                {
-                    "subgrupo": "Colégio",
-                    "tipo": "Débito",
-                    "valor": 750,
-                    "observacao": "testeee",
-                    "data": "22-05-2023"
-                }
-            ]
-        }
-    ]
-    
+  "lancamentos": [
+    {
+      "id": 1,
+      "subgrupo": "Energia_Energisa",
+      "tipo": "Débito",
+      "valor": 299,
+      "observacao": "testeee",
+      "data": "23-05-2023"
+    },
+    {
+      "id": 2,
+      "subgrupo": "Internet",
+      "tipo": "Débito",
+      "valor": 100,
+      "observacao": "testeee",
+      "data": "22-05-2023"
+    },
+    {
+      "id": 3,
+      "subgrupo": "Agua",
+      "tipo": "Débito",
+      "valor": 50,
+      "observacao": "testeee",
+      "data": "21-05-2023"
+    },
+    {
+      "subgrupo": "audi",
+      "data": "1000-10-10",
+      "valor": "100",
+      "tipo": "Crédito",
+      "observacao": "1000",
+      "id": 4
+    }
+  ]
 }

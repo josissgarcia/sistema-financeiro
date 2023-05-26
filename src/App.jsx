@@ -20,7 +20,8 @@ function App() {
           <Route path='/a-faculdade' element={<Faculdade />} />
           <Route path='/dpo-lgpd' element={<DpoLgpd />} />
           <Route path='/lancamentos' element={<Lancamentos />} />
-          <Route path="/visualiza-noticia/:id" element={<VisualizaNoticia />} />
+          {/* <Route path="/visualiza-noticia/:id" element={<VisualizaNoticia />} /> */}
+          <Route path="/visualiza-noticia" element={<VisualizaNoticia />} />
         </Routes>
       </BrowserRouter>
     </>

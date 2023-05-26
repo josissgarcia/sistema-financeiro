@@ -19,11 +19,14 @@ const Lancamentos = () => {
         <h1>Lancamentos</h1>
         <ul>
           {
-            lancamentos.map((lancamentosMapeados) => 
-            <li key={lancamentosMapeados.id}>
-              <h2><Link to={`/visualiza-noticia/${lancamentosMapeados.id}`}>{lancamentosMapeados.titulo}</Link></h2>
+            <li>
+              <h2><Link to={`/visualiza-noticia`}>Moradia</Link></h2>
             </li>
-            )
+            // lancamentos.map((lancamentosMapeados) => 
+            // <li key={lancamentosMapeados}>
+            //   <h2><Link to={`/visualiza-noticia/${lancamentosMapeados}`}>Moradia</Link></h2>
+            // </li>
+            // )
           }
         </ul>
     </div>

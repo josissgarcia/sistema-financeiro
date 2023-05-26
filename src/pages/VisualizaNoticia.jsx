@@ -4,9 +4,9 @@ import axios from 'axios'
 
 const VisualizaNoticia = () => {
     const {id} = useParams()
-    const url = `http://localhost:3000/lancamentos/${id}`
+    const url = `http://localhost:3000/lancamentos`
 
-    const [viewNews, setViewNews] = useState({})
+    const [viewNews, setViewNews] = useState([])
     const [formData, setFormData] = useState({
         subgrupo: '',
         data: '',
@@ -17,12 +17,20 @@ const VisualizaNoticia = () => {
     
     useEffect (() => {
         async function search(){
-            const response = await fetch(url)
-            const data = await response.json() 
-            setViewNews(data)
+            try {
+                const response = await fetch(url)
+                const data = await response.json()
+                if (response.ok) {
+                    setViewNews(data)
+                } else {
+                    console.error("Erro ao buscar dados: ", response.status);
+                }
+            } catch (error) {
+                console.error(error);
+            }
         }
         search()
-    }, [] )
+    }, [id, url] )
 
     const handleChange = (e) => {
         setFormData({...formData, [e.target.name]: e.target.value})
@@ -40,7 +48,8 @@ const VisualizaNoticia = () => {
 
   return (
     <div>
-        <h1>{viewNews.titulo}</h1>
+        {/* <h1>{viewNews.titulo}</h1> */}
+        <h1>Moradia</h1>
         
         <form onSubmit={handleSubmit}>
             <label>
@@ -74,16 +83,15 @@ const VisualizaNoticia = () => {
             <button type="submit">Submit</button>
         </form>
         {
-          viewNews.lancamentos2 &&
-          viewNews.lancamentos2.map((value, index) => (
-            <div key={index}>
-              <h2>{value.subgrupo}</h2>
-              <p>Data: {value.data}</p>
-              <p>Valor: {value.valor}</p>
-              <p>Tipo: {value.tipo}</p>
-              <p>Observação: {value.observacao}</p>
-            </div>
-          ))
+          viewNews.map((viewNew) => 
+          <div key={viewNew.id}>
+              <h2>{viewNew.subgrupo}</h2>
+              <p>Data: {viewNew.data}</p>
+              <p>Valor: {viewNew.valor}</p>
+              <p>Tipo: {viewNew.tipo}</p>
+              <p>Observação: {viewNew.observacao}</p>
+          </div>
+          )
         }
     </div>
   )
