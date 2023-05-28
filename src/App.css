@@ -1,0 +1,14 @@
+/* .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+        height: 100vh; /* Define a altura do navbar para ocupar 100% da altura da tela */
+  } */
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(74, 238, 24);
+} 
+

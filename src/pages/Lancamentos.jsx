@@ -16,11 +16,11 @@ const Lancamentos = () => {
 
   return (
     <div>
-        <h1>Lancamentos</h1>
+        <h2>Lançamentos</h2>
         <ul>
           {
             <li>
-              <h2><Link to={`/visualiza-noticia`}>Moradia</Link></h2>
+              <h2><Link to={`/form-cadastro`}>Formulário para Lançamentos de Despesas e Receitas Pessoais</Link></h2>
             </li>
             // lancamentos.map((lancamentosMapeados) => 
             // <li key={lancamentosMapeados}>
