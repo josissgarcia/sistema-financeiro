@@ -4,6 +4,7 @@ import Lancamentos from "./pages/Lancamentos"
 import Sobre from "./pages/Sobre"
 import Navbar from "./components/Navbar"
 import FormCadastro from "./pages/FormCadastro"
+import './App.css'
 
 
 function App() {
