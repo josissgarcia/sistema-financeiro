@@ -31,6 +31,14 @@
       "tipo": "Crédito",
       "observacao": "1000",
       "id": 4
+    },
+    {
+      "subgrupo": "",
+      "data": "2023-05-29",
+      "valor": "500",
+      "tipo": "",
+      "observacao": "Teste",
+      "id": 5
     }
   ]
 }

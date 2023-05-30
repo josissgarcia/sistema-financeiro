@@ -15,20 +15,11 @@ const Lancamentos = () => {
   }, [] )
 
   return (
-    <div>
+    <div className='lancamento'>
         <h2>Lançamentos</h2>
-        <ul>
-          {
-            <li>
-              <h2><Link to={`/form-cadastro`}>Formulário para Lançamentos de Despesas e Receitas Pessoais</Link></h2>
-            </li>
-            // lancamentos.map((lancamentosMapeados) => 
-            // <li key={lancamentosMapeados}>
-            //   <h2><Link to={`/visualiza-noticia/${lancamentosMapeados}`}>Moradia</Link></h2>
-            // </li>
-            // )
-          }
-        </ul>
+        <button className='linkForm' onClick={() => { window.location.href = '/form-cadastro'; }}>
+          Incluir Lançamento
+        </button>
     </div>
   )
 }

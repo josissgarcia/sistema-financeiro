@@ -1,39 +1,20 @@
-import { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { useState } from 'react'
 import axios from 'axios'
+import { Container, Row, Col, Card } from 'react-bootstrap';
 
-const VisualizaNoticia = () => {
-    const {id} = useParams()
+const FormCadastro = () => {
     const url = `http://localhost:3000/lancamentos`
 
-    const [viewNews, setViewNews] = useState([])
     const [formData, setFormData] = useState({
+        grupo: '',
         subgrupo: '',
-        data: '',
-        valor: '',
         tipo: '',
-        observacao: ''
+        data: '',
+        valor: ''
     })
-    
-    useEffect (() => {
-        async function search(){
-            try {
-                const response = await fetch(url)
-                const data = await response.json()
-                if (response.ok) {
-                    setViewNews(data)
-                } else {
-                    console.error("Erro ao buscar dados: ", response.status);
-                }
-            } catch (error) {
-                console.error(error);
-            }
-        }
-        search()
-    }, [id, url] )
 
     const handleChange = (e) => {
-        setFormData({...formData, [e.target.name]: e.target.value})
+        setFormData({ ...formData, [e.target.name]: e.target.value })
     }
 
     const handleSubmit = async (e) => {
@@ -46,55 +27,67 @@ const VisualizaNoticia = () => {
         }
     }
 
-  return (
-    <div>
-        {/* <h1>{viewNews.titulo}</h1> */}
-        <h1>Moradia</h1>
-        
-        <form onSubmit={handleSubmit}>
-            <label>
-                Subgrupo:
-                <select name="subgrupo" id="subgrupo" onChange={handleChange}>
-                  <option value="volvo">Volvo</option>
-                  <option value="saab">Saab</option>
-                  <option value="mercedes">Mercedes</option>
-                  <option value="audi">Audi</option>
-                </select>
-            </label>
-            <label>
-                Data:
-                <input type="date" name="data" onChange={handleChange} />
-            </label>
-            <label>
-                Valor:
-                <input type="number" name="valor" onChange={handleChange} />
-            </label>
-            <label>
-                Tipo:
-                <select name="tipo" id="tipo" onChange={handleChange}>
-                  <option value="Débito">Débito</option>
-                  <option value="Crédito">Crédito</option>
-                </select>
-            </label>
-            <label>
-                Observação:
-                <input type="text" name="observacao" onChange={handleChange} />
-            </label>
+    return (
+        <div>
+            <form onSubmit={handleSubmit}>
+            <Container>
+                <h1>Cadastro Receita/Despesa</h1>
+                <Card>
+                    <Row>
+                        <Col sm={2}>
+                            <label>Grupo:</label>
+                        </Col>
+                        <Col sm={10}>
+                            <select name="grupo" id="grupo" onChange={handleChange} >
+                                <option value="alimentacao">Alimentação</option>
+                                <option value="educacao">Educação</option>
+                                <option value="moradia">Moradia</option>
+                                <option value="saude">Saúde</option>
+                                <option value="transporte">Tranporte</option>
+                            </select>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col sm={2}>
+                            <label>Subgrupo:</label>
+                        </Col>
+                        <Col>
+                            <input type="text" name="subgrupo" onChange={handleChange} />
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col sm={2}>
+                            <label>Tipo:</label>
+                        </Col>
+                        <Col>
+                            <select name="tipo" id="tipo" onChange={handleChange}>
+                                <option value="Débito">Débito</option>
+                                <option value="Crédito">Crédito</option>
+                            </select>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col sm={2}>
+                            <label>Data:</label>
+                        </Col>
+                        <Col>
+                            <input type="date" name="data" onChange={handleChange} />
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col sm={2}>
+                            <label>Valor </label>
+                        </Col>
+                        <Col>
+                            <input type="number" name="valor" step=".01" onChange={handleChange} />
+                        </Col>
+                    </Row>
+                </Card>
+            </Container>
             <button type="submit">Submit</button>
         </form>
-        {
-          viewNews.map((viewNew) => 
-          <div key={viewNew.id}>
-              <h2>{viewNew.subgrupo}</h2>
-              <p>Data: {viewNew.data}</p>
-              <p>Valor: {viewNew.valor}</p>
-              <p>Tipo: {viewNew.tipo}</p>
-              <p>Observação: {viewNew.observacao}</p>
-          </div>
-          )
-        }
     </div>
-  )
+    )
 }
 
-export default VisualizaNoticia
+export default FormCadastro

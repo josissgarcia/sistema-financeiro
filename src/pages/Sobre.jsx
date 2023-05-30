@@ -2,16 +2,15 @@ import React from 'react'
 
 const Sobre = () => {
   return (
-    <div>
+    <div className='sobre'>
         <h2>Sobre</h2>
-        <h4>Disciplina: Tecnologia para Front-End III</h4>
-        <h4>Período: 4</h4>
-        <h4>Professor: Kelson Victor </h4>
-        <h4>Tecnologia: Projeto em React js </h4>
-        <h4>Projeto: Controle financeiro Pessaol</h4>
-        <h4>Alunos: João Guilherme Silveira Garcia </h4>
-        <h4>Alunos: Josimere Santos da S. Garcia</h4>
-        <h4>Data: 28/05/2023</h4>
+        <p><b>Disciplina:</b> Tecnologia para Front-End III</p>
+        <p><b>Período:</b> 4</p>
+        <p><b>Professor:</b> Kelson Victor </p>
+        <p><b>Tecnologia:</b> Projeto em React js </p>
+        <p><b>Projeto:</b> Controle financeiro Pessoal</p>
+        <p><b>Alunos:</b> Josimere Santos da S. Garcia  | João Guilherme Silveira Garcia </p>
+        <p><b>Data:</b> 28/05/2023</p>
     </div>
   )
 }
