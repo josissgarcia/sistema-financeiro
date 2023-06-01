@@ -3,8 +3,8 @@ import React from 'react'
 const Home = () => {
   return (
     <div className='home'>
-        <h2>Importância de ter controle financeiro</h2>
-
+        <h2>Fique por dentro:</h2>
+        <hr /> <br />
         <p>Controlar as despesas e receitas pessoais é crucial para manter um orçamento equilibrado, tomar decisões informadas, estabelecer metas financeiras, reduzir o estresse e criar hábitos financeiros saudáveis.
         Ao acompanhar suas finanças pessoais, você evita endividamento excessivo, identifica áreas de economia, estabelece metas realistas, reduz incertezas financeiras e constrói estabilidade econômica.
         É uma prática fundamental para alcançar uma vida financeira estável e responsável.</p>

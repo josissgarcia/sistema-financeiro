@@ -4,6 +4,7 @@ const Sobre = () => {
   return (
     <div className='sobre'>
         <h2>Sobre</h2>
+        <hr /> <br />
         <p><b>Disciplina:</b> Tecnologia para Front-End III</p>
         <p><b>Período:</b> 4</p>
         <p><b>Professor:</b> Kelson Victor </p>

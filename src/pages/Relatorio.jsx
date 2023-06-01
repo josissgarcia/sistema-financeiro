@@ -24,14 +24,17 @@ const Relatorio = () => {
     }, [id, url] )
   return (
     <div className='relatorio'>
+        <h2>Relatório de Lançamentos</h2>
+        <hr /> <br />
         {
-          viewItens.map((viewNew) => 
-          <div key={viewNew.id}>
-              <h2>{viewNew.subgrupo}</h2>
-              <p>Data: {viewNew.data}</p>
-              <p>Valor: {viewNew.valor}</p>
-              <p>Tipo: {viewNew.tipo}</p>
-              <p>Observação: {viewNew.observacao}</p>
+          viewItens.map((viewItem) => 
+          <div key={viewItem.id}>
+              <h3>{viewItem.grupo}</h3>
+              <p>Subgrupo: {viewItem.subgrupo}</p>
+              <p>Tipo: {viewItem.tipo}</p>
+              <p>Data: {viewItem.data}</p>
+              <p>Valor: {viewItem.valor}</p>
+              <br />
           </div>
           )
         }

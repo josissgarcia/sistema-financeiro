@@ -39,6 +39,7 @@ a:visited{
 .sobre{
     font-family: "Roboto", sans-serif;
     margin: 10px 10px 30px 30px;
+    line-height: 0.5;
 }
 
 .formCadastro{
@@ -47,13 +48,50 @@ a:visited{
     align-items: center;
 }
 
+.inputForm{
+    width: 300px;
+    height:30px;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    
+}
+
+.elementForm{
+    display: flex;
+    flex-direction: column;
+}
+
+.inputForm.dropdown{
+    width: 305px;
+    height:33px;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    
+}
+
+.labelForm{
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 20px;
+}
 
 .relatorio{
     font-family: "Roboto", sans-serif;
     margin: 10px 10px 30px 30px;
     align-items: center;
+    line-height: 0.5;
 }
 
+.button{
+    margin-left: 20px;
+}
 
 .lancamento{
     font-family: "Roboto", sans-serif;

@@ -2,43 +2,35 @@
   "lancamentos": [
     {
       "id": 1,
-      "subgrupo": "Energia_Energisa",
+      "grupo": "Energia_Energisa",
+      "subgrupo": "testeee",
       "tipo": "Débito",
-      "valor": 299,
-      "observacao": "testeee",
-      "data": "23-05-2023"
+      "data": "23-05-2023",
+      "valor": 299
     },
     {
       "id": 2,
-      "subgrupo": "Internet",
+      "grupo": "Internet",
+      "subgrupo": "testeee",
       "tipo": "Débito",
-      "valor": 100,
-      "observacao": "testeee",
-      "data": "22-05-2023"
+      "data": "22-05-2023",
+      "valor": 100
     },
     {
       "id": 3,
-      "subgrupo": "Agua",
+      "grupo": "Agua",
+      "subgrupo": "testeee",
       "tipo": "Débito",
-      "valor": 50,
-      "observacao": "testeee",
-      "data": "21-05-2023"
+      "data": "21-05-2023",
+      "valor": 50
     },
     {
-      "subgrupo": "audi",
-      "data": "1000-10-10",
-      "valor": "100",
+      "id": 4,
+      "grupo": "audi",
+      "subgrupo": "1000",
       "tipo": "Crédito",
-      "observacao": "1000",
-      "id": 4
-    },
-    {
-      "subgrupo": "",
-      "data": "2023-05-29",
-      "valor": "500",
-      "tipo": "",
-      "observacao": "Teste",
-      "id": 5
+      "data": "1000-10-10",
+      "valor": "100"
     }
   ]
 }

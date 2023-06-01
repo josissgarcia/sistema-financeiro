@@ -17,6 +17,7 @@ const Lancamentos = () => {
   return (
     <div className='lancamento'>
         <h2>Lançamentos</h2>
+        <hr /> <br />
         <button className='linkForm' onClick={() => { window.location.href = '/form-cadastro'; }}>
           Incluir Lançamento
         </button>
