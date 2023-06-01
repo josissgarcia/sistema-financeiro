@@ -1,36 +1,44 @@
 {
   "lancamentos": [
     {
-      "id": 1,
-      "grupo": "Energia_Energisa",
-      "subgrupo": "testeee",
+      "grupo": "Moradia",
+      "subgrupo": "Energia_Energisa",
       "tipo": "Débito",
       "data": "23-05-2023",
-      "valor": 299
+      "valor": 378,
+      "id": 1
     },
     {
-      "id": 2,
-      "grupo": "Internet",
-      "subgrupo": "testeee",
-      "tipo": "Débito",
-      "data": "22-05-2023",
-      "valor": 100
-    },
-    {
-      "id": 3,
-      "grupo": "Agua",
-      "subgrupo": "testeee",
+      "grupo": "Saúde",
+      "subgrupo": "Unimed_João_Pessoa",
       "tipo": "Débito",
       "data": "21-05-2023",
-      "valor": 50
+      "valor": 210,
+      "id": 2
     },
     {
-      "id": 4,
-      "grupo": "audi",
-      "subgrupo": "1000",
-      "tipo": "Crédito",
-      "data": "1000-10-10",
-      "valor": "100"
+      "grupo": "Educação",
+      "subgrupo": "Graduação_Uniesp",
+      "tipo": "Débito",
+      "data": "30-05-2023",
+      "valor": "312.17",
+      "id": 3
+    },
+    {
+      "grupo": "Transporte",
+      "subgrupo": "Consórcio do carro - Bradesco",
+      "tipo": "Débito",
+      "data": "2023-06-05",
+      "valor": "877.00",
+      "id": 4
+    },
+    {
+      "grupo": "Alimentacao",
+      "subgrupo": "Restaurante",
+      "tipo": "Débito",
+      "data": "2023-06-01",
+      "valor": "150",
+      "id": 5
     }
   ]
 }

@@ -38,11 +38,11 @@ const FormCadastro = () => {
                     <label className="labelForm">Grupo:</label>
                     <select className="inputForm dropdown" name="grupo" id="grupo" onChange={handleChange} value={formData.grupo}>
                         <option disabled value="">Selecione grupo</option>
-                        <option value="alimentacao">Alimentação</option>
-                        <option value="educacao">Educação</option>
-                        <option value="moradia">Moradia</option>
-                        <option value="saude">Saúde</option>
-                        <option value="transporte">Transporte</option>
+                        <option value="Alimentação">Alimentação</option>
+                        <option value="Educação">Educação</option>
+                        <option value="Moradia">Moradia</option>
+                        <option value="Saúde">Saúde</option>
+                        <option value="Transporte">Transporte</option>
                     </select>
                 </div>
 
